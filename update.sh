@@ -42,29 +42,10 @@ git clone https://github.com/djmai/MMMV-CICD.git
 cd MMMV-CICD
 
 echo '=========================================================='
-echo '===           PASO 7: LIMPIANDO DATA                   ==='
-echo '=========================================================='
-if [ -d ~/volumes/ ]; then
-    echo 'sudo rm -R volumes'
-    sudo rm -R volumes
-else
-    echo ''
-    echo 'No existe la carpeta volumes antigua'
-fi
-
-if [ -d ~/data/ ]; then
-    echo 'sudo rm -R data'
-    sudo rm -R data
-else
-    echo ''
-    echo 'No existe la carpeta volumes data'
-fi
-
-echo '=========================================================='
 echo '===           PASO 8: COPIANDO DATA                    ==='
 echo '=========================================================='
 if [ -d ./volumes/ ]; then
-    sudo cp -R volumes/ ~/
+    sudo cp -U volumes/ ~/
     sudo mkdir -p ~/volumes/elk-stack/elasticsearch
     cd ~/volumes/elk-stack/
     sudo chmod 777 elasticsearch/
@@ -75,7 +56,7 @@ fi
 
 if [ -d ./data/ ]; then
     echo 'sudo cp -R data/ ~/'
-    sudo cp -R data/ ~/
+    sudo cp -U data/ ~/
 else
     echo 'No existe la carpeta data'
 fi
