@@ -7,7 +7,8 @@ echo '=========================================================='
 echo '=========================================================='
 echo '=== PASO 1: CONFIGURACION DE VARAIBLE VM.MAX_MAP_COUNT ==='
 echo '=========================================================='
-sudo sysctl -w vm.max_map_count = 262144
+sudo sysctl -w vm.max_map_count=262144
+sudo sysctl -p
 
 echo '=========================================================='
 echo '===       PASO 2: INSTALACION DE DOCKER-COMPOSE        ==='
@@ -23,9 +24,9 @@ echo '=========================================================='
 echo '===          PASO 4: LIMPIADNO REPO LOCAL              ==='
 echo '=========================================================='
 if [ -d ~/MMMV-CICD/ ]; then
+    echo 'sudo rm -R MMMV-CICD'
     sudo rm -R MMMV-CICD
 else
-    echo ''
     echo 'No existe el repositorio antiguo'
 fi
 
@@ -33,7 +34,6 @@ echo '=========================================================='
 echo '===           PASO 5: CONFIGURANCDO GIT                ==='
 echo '=========================================================='
 alias git="docker run -ti --rm -v $(pwd):/git bwits/docker-git-alpine"
-git
 
 echo '=========================================================='
 echo '===           PASO 6: CLONANDO REPO                    ==='
@@ -45,6 +45,7 @@ echo '=========================================================='
 echo '===           PASO 7: LIMPIANDO DATA                   ==='
 echo '=========================================================='
 if [ -d ~/volumes/ ]; then
+    echo 'sudo rm -R volumes'
     sudo rm -R volumes
 else
     echo ''
@@ -52,6 +53,7 @@ else
 fi
 
 if [ -d ~/data/ ]; then
+    echo 'sudo rm -R data'
     sudo rm -R data
 else
     echo ''
@@ -68,18 +70,18 @@ if [ -d ./volumes/ ]; then
     sudo chmod 777 elasticsearch/
     cd ~/MMMV-CICD
 else
-    echo ''
     echo 'No existe la carpeta volumes'
 fi
 
 if [ -d ./data/ ]; then
+    echo 'sudo cp -R data/ ~/'
     sudo cp -R data/ ~/
 else
-    echo ''
     echo 'No existe la carpeta data'
 fi
 
 echo '=========================================================='
 echo '===          PASO 7: DESPLEGANDO CONTENEDORES          ==='
 echo '=========================================================='
+echo 'sudo docker-compose up --build -d'
 sudo docker-compose up --build -d
