@@ -33,7 +33,9 @@ fi
 echo '=========================================================='
 echo '===           PASO 5: CONFIGURANCDO GIT                ==='
 echo '=========================================================='
+echo 'alias git="docker run -ti --rm -v $(pwd):/git bwits/docker-git-alpine"'
 alias git="docker run -ti --rm -v $(pwd):/git bwits/docker-git-alpine"
+
 
 echo '=========================================================='
 echo '===           PASO 6: CLONANDO REPO                    ==='
@@ -64,7 +66,7 @@ echo '=========================================================='
 echo '===           PASO 8: COPIANDO DATA                    ==='
 echo '=========================================================='
 if [ -d ./volumes/ ]; then
-    sudo cp -R volumes/ ~/
+    sudo cp -ru volumes/ ~/
     sudo mkdir -p ~/volumes/elk-stack/elasticsearch
     cd ~/volumes/elk-stack/
     sudo chmod 777 elasticsearch/
@@ -75,7 +77,7 @@ fi
 
 if [ -d ./data/ ]; then
     echo 'sudo cp -R data/ ~/'
-    sudo cp -R data/ ~/
+    sudo cp -ru data/ ~/
 else
     echo 'No existe la carpeta data'
 fi
