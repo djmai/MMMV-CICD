@@ -47,8 +47,7 @@ Este proyecto hace uso de los siguientes componentes por medio del uso de conten
 - [Licencia 📄](#Licencia)
 - [Expresiones de Gratitud 🎁](#Gratitud)
 
-<a name="Comenzando" />
-
+<a name="Comenzando"></a>
 ## Comenzando 🚀
 
 Como obtener una copia del repositorio completo para trabajar de forma local si te agrada lo que he desarrollado
@@ -77,8 +76,7 @@ Para crear la carpeta de `MMMV-CICD` e instalar los requerimientos sólo clona e
 
 Mira **Programador** para conocer como desplegar el proyecto.
 
-<a name="Pre-requisitos" />
-
+<a name="Pre-requisitos"></a>
 ### Pre-requisitos 📋
 
 _Para poder realizar el despliegue correctamente del proyecto ocuparemos lo siguiente_
@@ -103,12 +101,11 @@ _Para poder realizar el despliegue correctamente del proyecto ocuparemos lo sigu
 
 ```
 
-<a name="Instalación" />
-
+<a name="Instalación"></a>
 ## Instalación 🔧
 
 <a name="Speed"></a>
-## Ejecución Rápida
+### Ejecución Rápida
 
 ```bash
 
