@@ -6,7 +6,7 @@ Proyecto Final - Modelos de Arquitecturas Orientadas a Servicios
 
 [![Versión](https://img.shields.io/badge/Versión-0.0.1-blue.svg)](https://github.com/djmai/MMMV-CICD/releases/tag/Deploy-CI-CD-v0.0.1)
 
-[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/IngMiguelMartinez?locale.x=es_XC)
+[![donate](https://www.paypalobjects.com/es_ES/i/btn/btn_donate_SM.gif)](https://paypal.me/IngMiguelMartinez?locale.x=es_XC)
 
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.link/7trr5f)
 
