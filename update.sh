@@ -33,14 +33,14 @@ else
 fi
 
 echo '=========================================================='
-echo '===           PASO 7: LIMPIANDO VOLUMES                ==='
+echo '===           PASO 7: LIMPIANDO DATA                   ==='
 echo '=========================================================='
-if [ -d ~/volumes/ ]; then
-    echo 'sudo rm -R volumes'
-    sudo rm -R volumes
+if [ -d ~/data/ ]; then
+    echo 'sudo rm -R data'
+    sudo rm -R data
 else
     echo ''
-    echo 'No existe la carpeta volumes antigua'
+    echo 'No existe la carpeta data antigua'
 fi
 
 echo '=========================================================='
