@@ -8,7 +8,7 @@ Proyecto Final - Modelos de Arquitecturas Orientadas a Servicios
 
 [![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/IngMiguelMartinez?locale.x=es_XC)
 
-
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.link/7trr5f)
 
 _Este repositorio contiene todo el despliegue de Integración y Distribución Continuas (CI/CD) los cuales son subconjuntos diferenciados de tareas agrupadas en lo que se conoce como etapas del canal._
 
@@ -40,8 +40,8 @@ Este proyecto hace uso de los siguientes componentes por medio del uso de conten
   - [Configuración de volumenes y data 🔩](#Volumens)
   - [Comandos Docker ⚙️](#Comandos-Docker) 
 - [Despliegue 📦](#Despliegue)
-  - [Primer Inicio 📦](#Start)
-  - [Actualización 📦](#Update)
+  - [Primer Inicio ✔️](#Start)
+  - [Actualización ❓](#Update)
 - [Posibles Errores 🛠️](#Errors)
 - [Construido con 🛠️](#Construido)
 - [Contribuyendo 🖇️](#Contribuyendo)
@@ -126,11 +126,11 @@ _Para poder realizar el despliegue correctamente del proyecto ocuparemos lo sigu
 Deshabilitar **Hyper-V** por medio de *Activar o desactivar las características de Windows*. 
    - En caso de contar con Windows 10 Home, deshabilitar las opciones de *Virtual Machine Platform* y *Windows Hypervisor Platform*. 
    
-    ![Hyper-V](https://www.elcegu.com/wp-content/uploads/2019/01/2019-01-31_21-29-55.png)
+![Hyper-V](https://www.elcegu.com/wp-content/uploads/2019/01/2019-01-31_21-29-55.png)
    
 Instalar [VirtualBox](https://www.virtualbox.org/wiki/Downloads). 
 
-    [![VirtualBox](https://www.igestweb.es/blog/wp-content/uploads/2017/09/Virtualbox-logo.jpg)](https://www.virtualbox.org/wiki/Downloads)
+[![VirtualBox](https://www.igestweb.es/blog/wp-content/uploads/2017/09/Virtualbox-logo.jpg)](https://www.virtualbox.org/wiki/Downloads)
 
 Abrir la consola de **Windows PowerShell**; de preferencia como administrador y ejecutar el siguiente comando: 
 
@@ -143,11 +143,11 @@ Abrir la consola de **Windows PowerShell**; de preferencia como administrador y 
 
 Instalar [Docker Desktop](https://www.docker.com/products/docker-desktop) y posteriormente reiniciar la computadora. 
 
-    [![Docker Desktop](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQRbJtTXmruUZNgXGDTbXEP2yUV0_cKm_D7l6Ahxi5x-QjOci9KHa32Nie3NyCOnyM70&usqp=CAU)](https://www.virtualbox.org/wiki/Downloads) 
+[![Docker Desktop](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQRbJtTXmruUZNgXGDTbXEP2yUV0_cKm_D7l6Ahxi5x-QjOci9KHa32Nie3NyCOnyM70&usqp=CAU)](https://www.virtualbox.org/wiki/Downloads) 
 
     Nota: Si después de reiniciar aparece la siguiente ventana; no hay que preocuparse, solo de clic en el botón OK y continuar con las instalaciones. 
     
-    [![Docker Error](https://user-images.githubusercontent.com/59643335/103649036-13a48000-4f5e-11eb-8154-bce9cfccf31b.png) 
+![Docker Error](https://user-images.githubusercontent.com/59643335/103649036-13a48000-4f5e-11eb-8154-bce9cfccf31b.png) 
 
 <a name="Chocolatey"></a> 
 ### Instalación de Chocolatey
@@ -296,7 +296,7 @@ Entrar a la carpeta creada al clonar el repositorio. Crear los contenedores con 
     ```
 
 <a name="Start"></a>
-#### Primer Inicio
+#### Primer Inicio ✔️
 
 Para comenzar por primera vez el despligue del proyecto, dentro de este mismo se encuentra un archivo de tipo bash, el cual puede copiar directamente a su raiz de su maquina virtual y ejecutar dicho archivo
 
@@ -309,7 +309,7 @@ Para comenzar por primera vez el despligue del proyecto, dentro de este mismo se
 Este archivo lo que hara sera ejecutar complemente todo lo necesario para poder hacer el despliegue de los contenedores y bases de datos
 
 <a name="Update"></a>
-#### Actualización
+#### Actualización ❓
 
 Para realizar una actualizacion del repositorio, ejecute el archivo de tipo bash que se encuentra en este mismo proyecto, para que ejecute la actualizacion correctamente sin problemas
 
