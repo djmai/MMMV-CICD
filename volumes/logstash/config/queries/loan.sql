@@ -38,9 +38,9 @@ SELECT
 	S.`INGRESO MENSUAL`, 
 	S.`NIVEL ACADEMICO`
 FROM
-	prestamos.loan AS L
+	adventure.loan AS L
 	LEFT JOIN
-	prestamos.socios AS S
+	adventure.socios AS S
 	ON 
 		L.NO_SOCIO = S.NO_SOCIO
 ORDER BY L.NO_CREDITO
