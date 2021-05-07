@@ -8,5 +8,5 @@
 - pipeline.id: gfasales_incremental-pipeline
   path.config: "/usr/share/logstash/pipeline/gfasales_incremental.conf"
 
-- pipeline.id: gfasales-scratch-pipeline
+- pipeline.id: product-quantity-pipeline
   path.config: "/usr/share/logstash/pipeline/product-quantity.conf"
