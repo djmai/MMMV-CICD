@@ -24,6 +24,7 @@ services:
     image: mysql:8
     container_name: MRSI-MySQL
     # restart: on-failure
+    restart: always
     ports:
       - 3306:3306
     environment:
@@ -79,7 +80,7 @@ services:
       context: .
       dockerfile: Dockerfile-logstash
     container_name: MRSI-Logstash
-    # restart: on-failure
+    restart: always
     depends_on:
       - mysql
       - elasticsearch
