@@ -33,6 +33,17 @@ else
 fi
 
 echo '=========================================================='
+echo '===           PASO 7: LIMPIANDO VOLUMES                ==='
+echo '=========================================================='
+if [ -d ~/volumes/ ]; then
+    echo 'sudo rm -R volumes'
+    sudo rm -R volumes
+else
+    echo ''
+    echo 'No existe la carpeta volumes antigua'
+fi
+
+echo '=========================================================='
 echo '===           PASO 2: INSTALANDO GIT                   ==='
 echo '=========================================================='
 echo 'alias git="docker run -ti --rm -v $(pwd):/git bwits/docker-git-alpine"'

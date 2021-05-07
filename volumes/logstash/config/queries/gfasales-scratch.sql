@@ -1,1 +1,1 @@
-SELECT * FROM classicmodels.gfasales
+SELECT * FROM adventure.gfasales

@@ -1,1 +1,1 @@
-SELECT * FROM adventureworks.vw_productos
+SELECT * FROM adventure.vw_productos
