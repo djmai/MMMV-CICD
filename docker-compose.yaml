@@ -17,7 +17,6 @@ services:
         - html:/usr/share/nginx/html
         - /var/run/docker.sock:/tmp/docker.sock:ro
         #- ~/config/reverse-proxy/custom-settings.conf:/etc/nginx/conf.d/custom-settings.conf:ro
-
   ###################
   # MySQL Container #
   ###################
@@ -30,8 +29,8 @@ services:
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
       #MYSQL_ROOT_PASSWORD: toor
-      MYSQL_DATABASE: classicmodels
-      MYSQL_USER: molmos
+      MYSQL_DATABASE: adventure
+      MYSQL_USER: mmartinez
       MYSQL_PASSWORD: P4ssw0rd1
     volumes:
       # Dump files for initiating tables

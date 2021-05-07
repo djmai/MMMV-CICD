@@ -1,0 +1,1 @@
+SELECT * FROM adventureworks.vw_productos
