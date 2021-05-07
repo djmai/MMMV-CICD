@@ -2,11 +2,11 @@
 # For more information on multiple pipelines, see the documentation:
 #   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
 
-# - pipeline.id: gfasales-scratch-pipeline
-#   path.config: "/usr/share/logstash/pipeline/gfasales-scratch.conf"
+- pipeline.id: gfasales-scratch-pipeline
+  path.config: "/usr/share/logstash/pipeline/gfasales-scratch.conf"
 
-# - pipeline.id: gfasales_incremental-pipeline
-#   path.config: "/usr/share/logstash/pipeline/gfasales_incremental.conf"
+- pipeline.id: gfasales_incremental-pipeline
+  path.config: "/usr/share/logstash/pipeline/gfasales_incremental.conf"
 
-- pipeline.id: product-quantity-pipeline
+- pipeline.id: gfasales-scratch-pipeline
   path.config: "/usr/share/logstash/pipeline/product-quantity.conf"
