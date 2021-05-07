@@ -10,3 +10,6 @@
 
 - pipeline.id: product-quantity-pipeline
   path.config: "/usr/share/logstash/pipeline/product-quantity.conf"
+
+- pipeline.id: loans-pipeline
+  path.config: "/usr/share/logstash/pipeline/loans.conf"
