@@ -26,8 +26,8 @@ SELECT
 	count( `i`.`Quantity` ) AS `Quantity` 
 FROM
 	(
-		`adventure.product` `p`
-		LEFT JOIN `adventure.productinventory` `i` ON ((
+		adventure.`product` `p`
+		LEFT JOIN adventure.`productinventory` `i` ON ((
 				`p`.`ProductID` = `i`.`ProductID` 
 			))) 
 GROUP BY
