@@ -41,24 +41,24 @@ echo '=========================================================='
 git clone https://github.com/djmai/MMMV-CICD.git
 cd MMMV-CICD
 
-echo '=========================================================='
-echo '===           PASO 7: LIMPIANDO DATA                   ==='
-echo '=========================================================='
-if [ -d ~/volumes/ ]; then
-    echo 'sudo rm -R volumes'
-    sudo rm -R volumes
-else
-    echo ''
-    echo 'No existe la carpeta volumes antigua'
-fi
+# echo '=========================================================='
+# echo '===           PASO 7: LIMPIANDO DATA                   ==='
+# echo '=========================================================='
+# if [ -d ~/volumes/ ]; then
+#     echo 'sudo rm -R volumes'
+#     sudo rm -R volumes
+# else
+#     echo ''
+#     echo 'No existe la carpeta volumes antigua'
+# fi
 
-if [ -d ~/data/ ]; then
-    echo 'sudo rm -R data'
-    sudo rm -R data
-else
-    echo ''
-    echo 'No existe la carpeta volumes data'
-fi
+# if [ -d ~/data/ ]; then
+#     echo 'sudo rm -R data'
+#     sudo rm -R data
+# else
+#     echo ''
+#     echo 'No existe la carpeta volumes data'
+# fi
 
 echo '=========================================================='
 echo '===           PASO 8: COPIANDO DATA                    ==='
