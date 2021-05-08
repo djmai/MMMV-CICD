@@ -237,7 +237,7 @@ Para ejecutar un Alias Git Temporal para no realizar la instalación.
 Clonar en la máquina el repositorio de este proyecto. 
 
     ``` 
-    git clone https://github.com/karroyodev/MTIE513-CICD-PGH-KTAC.git 
+    git clone https://github.com/djmai/MMMV-CICD.git 
     ``` 
 
 <a name="Clon-Repo"></a> 
