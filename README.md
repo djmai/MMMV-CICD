@@ -1,3 +1,5 @@
+<img align="left" alt="GIF" src="https://media.giphy.com/media/hrSFdM4rg8VFpXyz2m/giphy.gif" />
+
 # MMMV-CID
 Proyecto Final - Modelos de Arquitecturas Orientadas a Servicios
 
@@ -5,12 +7,11 @@ Proyecto Final - Modelos de Arquitecturas Orientadas a Servicios
 ### Matricula 00614948
 
 [![Versión](https://img.shields.io/badge/Versión-0.0.1-blue.svg)](https://github.com/djmai/MMMV-CICD/releases/tag/Deploy-CI-CD-v0.0.1)
-
 [![donate](https://www.paypalobjects.com/es_ES/i/btn/btn_donate_SM.gif)](https://paypal.me/IngMiguelMartinez?locale.x=es_XC)
-
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.link/7trr5f)
 
 _Este repositorio contiene todo el despliegue de Integración y Distribución Continuas (CI/CD) los cuales son subconjuntos diferenciados de tareas agrupadas en lo que se conoce como etapas del canal._
+
 
 ## Introducción
 
@@ -216,7 +217,7 @@ Al iniciar RancherOS con un archivo de configuración, se puede seleccionar qué
     
     _Al finalizar, se va a cerrar la sesión de la máquina y se tendrá que hacer de nuevo el login con ssh._ 
     
-<a name="docker-compose"></a> 
+<a name="Docker-Compose"></a> 
 ### Instalación de Docker-Compose
 
 Instalar docker-compose dentro de docker-machine:
@@ -240,7 +241,7 @@ Clonar en la máquina el repositorio de este proyecto.
     git clone https://github.com/djmai/MMMV-CICD.git 
     ``` 
 
-<a name="Clon-Repo"></a> 
+<a name="Volumens"></a> 
 ### Configuración de volumenes y data
 
 Crear las carpetas de volumes para Elasticsearch dentro de la carpeta del proyecto y brindar permisos. 
