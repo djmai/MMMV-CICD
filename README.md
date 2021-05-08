@@ -1,4 +1,4 @@
-<img align="left" alt="GIF" src="https://media.giphy.com/media/hrSFdM4rg8VFpXyz2m/giphy.gif" />
+<img align="right" alt="GIF" src="https://media.giphy.com/media/hrSFdM4rg8VFpXyz2m/giphy.gif" />
 
 # MMMV-CID
 Proyecto Final - Modelos de Arquitecturas Orientadas a Servicios
